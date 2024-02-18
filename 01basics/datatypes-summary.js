@@ -26,3 +26,32 @@ const myFun = function () {
 }
 
 console.log(typeof myFun) //function
+
+
+//----------------------------------------------------------------------
+
+//Stack and heap
+
+//stack => primitive (this provide the copy of data)
+//heap => nonprimitive (this provide actual reference of data in the memory)
+
+
+//primitive
+let userOne = "name"
+let userTwo = userOne //userTwo get the copy of userOne
+userTwo = "name2"
+console.log(userOne) //userOne remain unchanged
+console.log(userTwo)
+
+
+//non-primitive
+
+let obj1 = {
+    email : "username@gmail.com",
+    upi : "upi@sbi.com"
+}
+
+let obj2 = obj1
+obj2.email = "user2@gmail.com"
+console.log(obj1.email )
+console.log(obj2.email)
