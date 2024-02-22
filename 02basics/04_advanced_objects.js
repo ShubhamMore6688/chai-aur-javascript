@@ -38,3 +38,20 @@ console.log(Object.values(tinderUser)) //to get all the values in the form of ar
 console.log(Object.entries(tinderUser)) //create subarray for each key and value pair
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')) //to check if the perticular property is present in that object or not
+
+
+//object destructure
+
+const course = {
+    courseName: "chai aur javascript",
+    price: 999,
+    courseInstructor: "Hitesh"
+}
+
+console.log(course.courseInstructor) //this is normal way accessing values in the objects
+
+// const {courseInstructor} = course
+// console.log(courseInstructor)
+
+const {courseInstructor: instructor} = course
+console.log(instructor)
