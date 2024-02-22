@@ -15,7 +15,7 @@ console.log(gameName.charAt(1)) //we can access each character in the string
 console.log(gameName.length)
 console.log(gameName.indexOf('d'))
 
-console.log(gameName.slice(-8, 7)) 
+console.log(gameName.slice(-8, 7)) //this will print string between 7 from start and 8 from the end of the string
 //cut the string from 0 to 4 only 5 is not considered in this
 // -ve value reverse the string
 console.log(gameName.split('-')) //split the string in substrings seperated by '-'

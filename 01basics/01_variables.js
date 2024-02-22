@@ -5,7 +5,7 @@ let accountName = "accountname"
 var accountPassword = "541223"
 accountCity = "Pune"
 
-// accountId = 2  this is not allowed
+// accountId = 2  this is not allowed because we declare it as a const
 accountName = "name"
 accountPassword = "87644"
 accountCity = "mumbai"

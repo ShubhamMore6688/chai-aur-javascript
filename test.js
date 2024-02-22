@@ -74,4 +74,14 @@ console.log(user3),
     }
   }
 
-  
+  const sym = Symbol("key1")
+  const user = {
+    username: "user",
+    age: 13,
+    [sym]: "keys",
+    address: "pune"
+  }
+
+  console.log(user.username)
+  console.log(user["age"])
+  console.log(typeof user[sym])

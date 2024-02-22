@@ -21,11 +21,11 @@ console.log(newArr)
 newArr.shift() //this is like pop but it remove the element from the starting of the array
 console.log(newArr)
 
-//slice and splice
+//slice(give the substring) and splice(remove that perticular substring from the array)
 
 
 console.log(newArr.slice(1,3)) //this gives the subarray from (1,2) & this will not modify the original array
 console.log(newArr)
 
-console.log(newArr.splice(1,3)) //this will modify the original array
+console.log(newArr.splice(1,3)) //this will modify the original array (this delete the elements form 1 to 3 from the array)
 console.log(newArr)

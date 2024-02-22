@@ -34,3 +34,9 @@ console.log(newfruit)
 const colors = ["red", "yellow", "blue"];
 colors[5] = "brown"
 console.log(colors) //[ 'red', 'yellow', 'blue', <2 empty items>, 'brown' ]
+
+const freshFruit = fruit //this copy actually give the reference of the original array
+console.log(freshFruit)
+freshFruit[1] = "papaya" //changes in the freshFruit array also change the original fruit array
+console.log(fruit)
+console.log(freshFruit)
