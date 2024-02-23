@@ -41,3 +41,44 @@ function loginUserMessage(username = "default") //when we don't pass the argumen
 
 // console.log(loginUserMessage("user1"))
 loginUserMessage()
+
+
+///////////////////////// functions with objects and array ////////////////////////////////
+
+function addCartPrice(...num) // ... is rest operator it helps to get the more than one arguments form the function
+{
+    return num;
+}
+
+console.log(addCartPrice(200, 400, 5000, 800))
+
+function calculatePrice(var1, var2, ...num){
+    return num //output: [ 800, 700, 2000 ]
+}
+console.log(calculatePrice(200, 400, 800, 700, 2000))
+
+
+//object handle
+
+const user = {
+    username: "user1",
+    price: 199
+}
+
+function handleObject(anyObj){
+    return `Username is ${anyObj.username} and price is ${anyObj.price}`
+}
+
+// console.log(handleObject(user)) // we can pass the object as a parameter
+
+console.log(handleObject({username: "user2", price: 3444})) //we can pass the object in this way also
+
+
+//handle array
+
+const priceArr = [200, 300, 6000, 1000, 298]
+function handleArray(anyArr){
+    return anyArr[1]
+}
+
+console.log(handleArray(priceArr))

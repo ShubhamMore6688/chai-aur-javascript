@@ -1,6 +1,6 @@
 
 // const tinderUser = new Object()  //this is singleton(this is constuctor based implementation)
-
+const obj = new Object(); //using object constructor also we can make the object
 const tinderUser = {}
 
 tinderUser.id = "dd12"
