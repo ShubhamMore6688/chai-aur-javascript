@@ -87,16 +87,63 @@
 //   console.log(typeof user[sym])
 
 
-const student = {
-  name: "shubham",
-  age: 33,
-  courseName: "BTech"
-}
-const obj = new Object(student);
-// obj.name = "user"
-// obj.age = 34
-// obj.courseName = "Hitesh"
-// // console.log(typeof obj)
+// const student = {
+//   name: "shubham",
+//   age: 33,
+//   courseName: "BTech"
+// }
+// const obj = new Object(student);
+// // obj.name = "user"
+// // obj.age = 34
+// // obj.courseName = "Hitesh"
+// // // console.log(typeof obj)
+// // console.log(obj)
+
 // console.log(obj)
 
-console.log(obj)
+
+
+
+const user1 = {name: "user1", age: 13, email: "abc@gmail.com"}
+const user2 = {gender: "male", marks: 93}
+
+//object
+for(const key in user1){
+  // console.log(key)
+  // console.log(user1[key]);
+}
+
+
+//array
+const arr = ["spiderman","superman","hulk","jethalal"]
+for(const key of arr){
+  // console.log(key)
+}
+for(const key in arr){
+  // console.log(arr[key])
+}
+
+arr.forEach((event)=>{
+  // console.log(event)
+})
+
+const map = new Map()
+map.set('JS','Javascript')
+map.set('py','Python')
+map.set('rb','ruby')
+
+for(const [key,value] of map){
+  // console.log(key,'-',value)
+}
+
+for(const key in map){
+  // console.log(key)
+}
+
+map.forEach((event)=>{
+  // console.log(event)
+})
+
+//for-of  =>  array, object, map
+//for-in => array, object
+//for each
