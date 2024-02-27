@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <h1>Chai aur Code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // this execute the function inside it after the give time (this execute only once)
+    // setTimeout(() => {
+    //     console.log("time is set for 2s")
+    // }, 2000);
+
+    const changeText = () =>{
+        const heading = document.querySelector('h1')
+        heading.innerHTML = "Javascript series"
+
+    }
+    const setText = setTimeout(changeText, 2000); //in this we only need to give reference of the function
+
+    //to stop this timeout cleartimeout is used
+    document.querySelector('#stop').addEventListener('click', ()=> {
+        clearTimeout(setText)
+        console.log("STOPPED")
+    })
+
+</script>
+</html>
