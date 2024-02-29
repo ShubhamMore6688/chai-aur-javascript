@@ -14,4 +14,4 @@ console.log(typeof undefined) //undefined
 //boolean
 //null => standalone value(empty)
 //undefined => value is not assigned yet
-//typeof null => undefined
+//typeof null => object
